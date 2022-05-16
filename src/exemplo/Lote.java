@@ -11,12 +11,11 @@ public class Lote{
         this.id = Integer.toString(hashCode());
         this.produto = p;
         this.quantidade = q;
-
     }
 
     public String toString(){
         return "quantidade: " + quantidade + ", " + "produto: " + produto.toString();
-    } 
+    } s
 
     public String getID(){
         return this.id;
@@ -24,5 +23,9 @@ public class Lote{
 
     public void setQuantidade(int novaQuantidade) {
         this.quantidade = novaQuantidade;
+    }
+
+    public Produto getProd(){
+        return this.produto;
     }
 }

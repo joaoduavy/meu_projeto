@@ -1,6 +1,7 @@
 package exemplo;
 import java.util.Map ;
 import java.util.HashMap;
+import java.util.ArrayList;
 
 public class ProdutoRepositorio {
     private Map<String, Produto> catalogo;
@@ -28,15 +29,18 @@ public class ProdutoRepositorio {
        return this.catalogo.get(id); 
     }
 
-    public String ListarProduto(){
-        String aux = "";
-        for (Map.Entry<String,Produto> pair : catalogo.entrySet()) {
-            aux += pair.getValue() + "\n";
-        }
-        return aux;
-    }
-
     public HashMap<String, Produto> getCatalogo(){
         return (HashMap<String, Produto>)this.catalogo;   
+    }
+
+    public ArrayList<Produto> getAll(){
+        ArrayList<Produto> query = new ArrayList<Produto>();
+
+        for(String id : this.catalogo.keySet()){
+            if(this.catalogo(id).getName().contains(nome))
+                query.add(p);
+        }
+
+        return query; 
     }
 }

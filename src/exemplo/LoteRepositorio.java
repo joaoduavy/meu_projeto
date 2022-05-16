@@ -23,4 +23,14 @@ public class LoteRepositorio{
         aux.setQuantidade(quantidade);
         this.AdicionarLote(aux);
     }
+
+    public ArrayList<Lote> getAll(){
+        ArrayList<Lote> query = new ArrayList<Lote>();
+        
+        for(String id: loteamentos.keySet()){
+            query.add(loteamentos.get(id));
+        }
+
+        return query;
+    }
 }
