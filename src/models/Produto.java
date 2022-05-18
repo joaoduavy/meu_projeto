@@ -1,4 +1,4 @@
-package exemplo;
+package models;
 
 
 public class Produto{

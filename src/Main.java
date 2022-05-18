@@ -1,7 +1,7 @@
-import exemplo.Lote;
-import exemplo.Produto;
-import exemplo.LoteRepositorio;
-import exemplo.ProdutoRepositorio;
+import models.Lote;
+import models.Produto;
+import repositories.LoteRepositorio;
+import repositories.ProdutoRepositorio;
 
 public class Main{
     
